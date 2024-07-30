@@ -1,7 +1,8 @@
-# Template__W3S
-# Hello, this code is created by me
-# I have a dream is become greate Fullstack Developer, so I need to train my knowlegde
-# So I create some web from W3S, you can take it if you are cooding this template too
-# If it helps you, you can support me a little bonus :>
-Vietnam: BIDV - 65010005089455 - Nguyen Ngoc Hoai
-Foreign: Paypal - djsidjijdsjidjisjd
+# Template from W3Schools
+## Hello! This code was created by me. I have a dream of becoming a great Fullstack Developer, so I am constantly training and improving my knowledge. I created this website using resources from W3Schools, and you are welcome to use this template if you're working on something similar.
+
+### If it helps you and you'd like to support me, you can leave a small bonus. Thank you!
+
+*** Vietnam: BIDV - 65010005089455 - Nguyen Ngoc Hoai ***
+*** International: PayPal - paypal.me/hzdream ***
+
