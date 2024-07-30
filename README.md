@@ -3,6 +3,5 @@
 
 ### If it helps you and you'd like to support me, you can leave a small bonus. Thank you!
 
-*** Vietnam: BIDV - 65010005089455 - Nguyen Ngoc Hoai ***
-*** International: PayPal - paypal.me/hzdream ***
+Vietnam: BIDV - 65010005089455 - Nguyen Ngoc Hoai or International: PayPal - paypal.me/hzdream
 
