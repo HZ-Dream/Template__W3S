@@ -1,0 +1,37 @@
+/* Mobile & Tablet */
+@media (max-width: 63.9375em /* < 1023px */) {
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em /* >= 740px */) and (max-width: 63.9375em /* <= 1023px */) {
+
+}
+
+/* Mobile */
+@media (max-width: 46.1875em /* <= 739px */) {
+    .navbar-mobile__menu {
+        display: block;
+        font-size: 3rem;
+        padding: 4px 16px;
+        position: absolute;
+        left: 315px;
+    }
+
+    .navbar-menu__list {
+        display: none; /* Initially hide the menu */
+    }
+
+    .navbar-menu__list.block {
+        display: block; /* Show the menu when the block class is added */
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+/* PC */
+@media (min-width: 64em /* >= 1024 */) {
+
+}

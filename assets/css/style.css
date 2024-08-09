@@ -1,0 +1,276 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: var(--white-color);
+    z-index: 1;
+}
+
+.header__navbar {
+    display: flex;
+    padding: 8px 16px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+    height: var(--navbar-height);
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.navbar-home {
+    display: block;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+.navbar-list__item {
+    padding: 8px 16px;
+    margin: 4px 0;
+}
+
+.navbar-home:hover,
+.navbar-list__item:hover {
+    background-color: #ccc;
+}
+
+.navbar-list__item-link {
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: var(--font-text);
+    letter-spacing: 0.4rem;
+    line-height: var(--font-text);
+}
+
+/* Slider css */
+.slider {
+    position: relative;
+    margin-top: 54px;
+    margin-bottom: 11px;
+    padding-top: 41%;
+    background: url('../img/architect.jpg') top center / cover no-repeat;
+}
+
+.slider__heading {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.6rem;
+    color: var(--white-color);
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slider__heading-block {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 16px;
+    margin-right: 10px;
+}
+/* Body css */
+/* Project */
+.body-project {
+    padding: 8px 16px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body-project__item {
+    padding: 32px 16px 8px;
+}
+
+.body-project__item--img {
+    padding: 0px 16px;
+}
+
+.body-heading {
+    font-size: 2.4rem;
+    padding: 16px 0;
+    margin: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.project__item {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.project__item-name {
+    color: var(--white-color);
+    background-color: var(--black-color);
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.project__item-img {
+    width: 100%;
+}
+
+/* About css */
+.body-description {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.body-about {
+    margin-top: 40px;
+}
+
+.body-about__item {
+    margin-bottom: 16px;
+}
+
+.body-about__item-img {
+    display: block;
+    width: 100%;
+    height: auto; /* Giữ nguyên tỷ lệ ảnh */
+}
+
+.body-about__item-info {
+    width: 100%;
+}
+
+.body-about__name {
+    margin: 10px 0;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.body-about__job {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+.body-about__say {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.body-about__item-btn {
+    width: 100%;
+    height: 35px;
+    border: none;
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+}
+
+.body-about__item-btn:hover {
+    background-color: #ccc;
+}
+
+/* Contact css */
+.form-controls {
+    display: block;
+}
+
+.form-controls__input {
+    padding: 8px;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 16px 0;
+    font-size: 1.5rem;
+}
+
+.form-controls__btn {
+    min-width: 158px;
+    min-height: 40px;
+    padding: 8px 16px;
+    margin: 16px 0;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    border: none;
+    text-transform: uppercase;
+}
+
+.form-controls__btn:hover {
+    background-color: #ccc;
+    color: var(--black-color);
+}
+
+.map-img {
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Footer css */
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 16px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 80px;
+    line-height: 45px;
+}
+
+.footer-layout__origin--link {
+    color: var(--white-color);
+}
+
+.footer-layout__origin--link:hover {
+    color: #4CAF50;
+}
+
+/* Mobile */
+.navbar-mobile__menu {
+    display: none;
+}
+
+.navbar-menu__list {
+    display: none;
+    position: absolute;
+    top: 53px;
+    width: 100%;
+    font-size: 2rem;
+    background-color: var(--white-color);
+    list-style: none;
+    animation: fadeIn ease-in 0.2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        top: 100px;
+    } 
+    to {
+        opacity: 1;
+        top: 53px;
+    }
+}
+
+.navbar-menu__item:hover {
+    background-color: #ccc;
+}
+
+.navbar-menu__item {
+    padding: 16px;
+}
+
+.navbar-menu__link {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+

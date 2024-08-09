@@ -1,0 +1,29 @@
+:root {
+    /* Color */
+    --white-color: #fff;
+    --black-color: #000;
+    --border-color: #dbdbdb;
+
+    /* Height */
+    --font-text: 15px;
+    --header-height: 120px;
+    --navbar-height: 54px;
+    --margin-b-28: 28px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* 100% <=> 16px, 62.5% <=> 10px => 1 rem = 10px */
+    line-height: 1.6rem; /* <=> 16px */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
