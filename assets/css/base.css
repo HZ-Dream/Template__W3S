@@ -1,0 +1,24 @@
+:root {
+    /* Color */
+    --white-color: #fff;
+    --black-color: #000;
+    --border-color: #dbdbdb;
+    --text-color: #000;
+    --primary-color: #f1f1f1;
+    /* Height */
+    --body-bar: 300px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 15px; 
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
