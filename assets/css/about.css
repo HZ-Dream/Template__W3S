@@ -1,0 +1,117 @@
+/* Container First */
+.containerFirst {
+    margin-top: 133px;
+    width: 100%;
+    position: relative;
+}
+
+.containerFirst__banner-img {
+    width: 100%;
+    height: auto;
+}
+
+.containerFirst__content {
+    display: block;
+    width: 700px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.containerFirst-content__title {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.containerFirst-content__text {
+    font-size: 14px;
+}
+
+/* Container Second */
+.containerSecond {
+    padding: 34px 17px;
+    margin: 0 60px;
+}
+
+.containerSecond__text {
+    padding: 0 17px;
+    margin: 0 200px;
+    text-align: justify;
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.containerSecond__text:last-child {
+    margin-bottom: 0;
+}
+
+/* Container Third */
+.containerThird {
+    padding: 34px 0;
+    background: #efefef;
+}
+
+.containerThird__title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #525252;
+    margin-bottom: 20px;
+}
+
+.containerThird__package {
+    margin: 0 260px;
+    padding: 0 17px;
+}
+
+.containerThird__package-item {
+    padding: 20px;
+    width: 380px;
+    height: 240px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.containerThird__package-item:hover {
+    border: 1px solid var(--second-color);
+    cursor: pointer;
+}
+
+.containerThird__package-item:hover > .containerThird__package-item-head {
+    color: var(--second-color);
+}
+
+.containerThird__package-item-head {
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-bottom: 1px solid #ebebeb;
+}
+
+.containerThird__package-iten-head-p {
+    margin-bottom: 0;
+}
+
+.containerThird__package-item-body {
+    margin-top: 10px;
+    padding-top: 1px;
+}
+
+.containerThird__package-item-body-text {
+    font-size: 14px;
+    color: var(--text-color);
+}
+

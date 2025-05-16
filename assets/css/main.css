@@ -54,6 +54,7 @@ select:active {
 .containerNavbar {
     display: block;
     height: 125px;
+    box-shadow: 4px 4px 32px 16px rgba(0, 0, 0, .08);
     position: fixed;
     top: 0px;
     z-index: 100;
