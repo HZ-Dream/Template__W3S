@@ -105,6 +105,10 @@ select:active {
     display: none;
 }
 
+.containerNavbar__navbar-menu-list-item.active a {
+  color: var(--primary-color);
+}
+
 .containerNavbar__navbar-menu-list-item.vn {
     position: relative;
 }
