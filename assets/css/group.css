@@ -1,0 +1,36 @@
+/* Container First */
+.containerFirst {
+    margin-top: 133px;
+    width: 100%;
+    position: relative;
+}
+
+.containerFirst__banner-img {
+    width: 100%;
+    height: auto;
+}
+
+.containerFirst__content {
+    display: block;
+    width: 700px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.containerFirst-content__title {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.containerFirst-content__text {
+    font-size: 14px;
+}
+
+/* Container Second */

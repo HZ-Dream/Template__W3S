@@ -34,3 +34,111 @@
 }
 
 /* Container Second */
+.containerSecond {
+    padding: 51px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.containerSecond-content__item {
+    display: flex;
+    width: 1000px;
+    margin: 0 60px 70px;
+    padding: 0 17px;
+}
+
+.containerSecond-content__item:last-child {
+    margin-bottom: 10px;
+}
+
+.containerSecond-content__item.reverse {
+    flex-direction: row-reverse;
+}
+
+.containerSecond-content__item-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 0 50px;
+}
+
+.containerSecond-content__item-des-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-two-color);
+}
+
+.containerSecond-content__item-des-content {
+    color: #3d3d3d;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.containerSecond-content__item-des-more {
+    width: 131px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--primary-color);
+    font-weight: 700;
+}
+
+.containerSecond-content__item-des-more-link:hover {
+    text-decoration: none;
+}
+
+
+.containerSecond-content__item-img img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Container Third */
+.containerThird {
+    padding: 0 17px;
+    margin: 0 150px;
+}
+
+.containerThird__head-title {
+    display: block;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+    color: var(--text-two-color);
+    margin-bottom: 34px;
+}
+
+.containerThird__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.containerThird__content-item {
+    padding-left: 34px;
+    padding-bottom: 34px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+
+.containerThird__content-item-img {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 20px;
+}
+
+.containerThird__content-item-text {
+    font-size: 18px;
+    color: var(--text-two-color);
+    font-weight: 700;
+}
+
+.containerThird__content-item-text-light {
+    color: var(--primary-color);
+}
