@@ -34,3 +34,107 @@
 }
 
 /* Container Second */
+.containerSecond {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 51px 0;
+    height: 1630px;
+}
+
+.containerSecond__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+    padding: 0 17px;
+    margin-bottom: 34px;
+}
+
+.containerSecond__head-menu {
+    display: block;
+    padding: 20px 17px;
+    background: linear-gradient(180deg, #057b9f -32.73%, #00aeef 57.27%, #00aeef 108.51%, #057b9f 140.65%);
+    border-radius: 8px;
+    width: 600px;
+    height: auto;
+    text-align: center;
+}
+
+.containerSecond__head-title {
+    font-size: 27px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.containerSecond__head-menu-title {
+    color: var(--white-color);
+}
+
+.containerSecond__head-menu-selectMenu {
+    display: flex;
+    margin-top: 10px;
+    padding: 12px 17px;
+    background-color: var(--white-color);
+    border-radius: 999px;
+}
+
+.containerSecond__head-menu-select {
+    border: none;
+    border-radius: 999px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.containerSecond__content.row {
+    margin: 0 150px;
+    padding: 0 17px;
+}
+
+.containerSecond__content-item {
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.containerSecond__content-item-img {
+    position: relative;
+    width: 470px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.containerSecond__content-item-info {
+    position: absolute;
+    top: 74%;
+    margin-left: 120px;
+    width: 350px;
+    display: block;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.containerSecond__content-item-info:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.containerSecond__content-item-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.containerSecond__content-item-text i{
+    color: var(--primary-color);
+}
+
+.containerSecond__content-item-info:hover > .containerSecond__content-item-text i {
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+}
