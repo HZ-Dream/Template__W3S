@@ -50,6 +50,10 @@ select:active {
     text-decoration: none;
 }
 
+.mb-30px {
+    margin-bottom: 30px;
+}
+
 /* Nav */
 /* Navbar */
 .containerNavbar {

@@ -1,0 +1,44 @@
+.containerNewGym {
+    margin-top: 133px;
+    width: 100%;
+    position: relative;
+    height: 250px;
+    padding: 51px 200px;
+}
+
+.containerNewGym__title {
+    font-size: 27px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.containerNewGym__find {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    padding: 0 50px;
+}
+
+.containerNewGym__find i {
+    font-size: 30px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.containerNewGym__find-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: 0;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.containerNewGym__find:has(.containerNewGym__find-input:focus) {
+    border: 1px solid #00aeef;
+    box-shadow: 0 0 0 2px #b3e5fc;
+}
