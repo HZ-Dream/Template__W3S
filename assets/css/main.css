@@ -245,6 +245,10 @@ footer {
   font-size: 14px;
 }
 
+.containerFooter__info-about-item.active {
+  color: var(--text-two-color);
+}
+
 .containerFooter__info-about-item:hover,
 .containerFooter__info-policy-item:hover {
   text-decoration: none;
