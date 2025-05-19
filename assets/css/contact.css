@@ -1,0 +1,121 @@
+.containerNewGym {
+    margin-top: 133px;
+    width: 100%;
+    height: 100%;
+    padding: 51px 0;
+}
+
+/* Container First */
+.containerFirst {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin: 0 77px;
+}
+
+.containerFirst__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 230px;
+    background-color: #f6f6f6;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.containerFirst__item i {
+    font-size: 60px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.containerFirst__item span {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.containerFirst__item:hover i {
+    animation: tilt-shaking 0.15s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Contaienr Second */
+.containerSecond {
+    height: 100%;
+    position: relative;
+    padding: 0 200px;
+    margin: 51px 77px 0px;
+}
+
+.containerSecond__title {
+    font-size: 27px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.containerSecond__item {
+    cursor: pointer;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.containerSecond__item:last-child {
+    border-bottom: none;
+}
+
+.containerSecond__item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.containerSecond__item-head-icon-minus {
+    display: none;
+}
+
+.containerSecond__policy {
+    display: block; 
+    max-height: 0; 
+    overflow: hidden;
+    font-size: 14px;
+    color: var(--text-color);
+    opacity: 0; 
+    transform: translateY(-10px); 
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.containerSecond__policy.active {
+    max-height: 1000px; 
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+.containerSecond__policy ul {
+    padding: 0px 28px 10px;
+}
+
+.containerSecond__policy p {
+    padding: 0px 10px 10px;
+}
+
+.containerSecond__policy ul li,
+.containerSecond__policy p {
+    margin-top: 10px;
+}
