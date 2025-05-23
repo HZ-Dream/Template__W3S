@@ -59,7 +59,6 @@
 .containerFirst-content__slogan-des {
     font-size: 14px;
     text-align: center;
-    text-justify: inter-word;
 }
 
 .containerFirst-content__package.row {
@@ -75,6 +74,7 @@
     background: linear-gradient(167deg, #013641 -41.96%, #009fc2 98.33%);
     color: var(--white-color);
     border-radius: 10px;
+    height: 355px;
 }
 
 .containerFirst-content__package-item.normal {
@@ -217,4 +217,82 @@
     height: 350px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+/* Responsive Main */
+/* Mobile & Tablet */
+@media (max-width: 63.9375em /* < 1023px */) {
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em /* >= 740px */) and (max-width: 63.9375em /* <= 1023px */) {
+    .containerFirst-content__package.row {
+        margin: 30px 150px 60px;
+        padding: 0px 20px;
+        flex-wrap: nowrap;
+    }
+
+    .containerFirst-content__slogan {
+        padding: 0px;
+    }
+
+    .containerFirst-content__package-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em /* <= 739px */) {
+    .containerFirst-content__package.row {
+        margin: 20px 12px;
+        padding: 0;
+    }
+
+    .containerFirst-content__slogan {
+        margin: 180px 12px 0px;
+        padding: 0;
+    }
+
+    .containerFirst-banner {
+        margin-top: 130px;
+    }
+
+    .containerSecond-content__item {
+        flex-direction: column !important;
+        width: 100%;
+        margin: 0 12px 40px;
+    }
+
+    .containerSecond-content__item-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .containerSecond-content__item-des {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .containerFirst-content__package-item {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .containerFirst-content__address {
+        top: 15px;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* PC */
+@media (min-width: 64em /* >= 1024 */) {
+
+}
+
+/* Tablet & PC */
+@media (min-width: 46.25em /* >= 740px */) {
+    
 }
