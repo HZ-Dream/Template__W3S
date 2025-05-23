@@ -66,6 +66,10 @@ select:active {
     margin-bottom: 30px;
 }
 
+.mobile-menu__active {
+    color: var(--primary-color) !important;
+}
+
 /* Nav */
 /* Navbar */
 .containerNavbar {
@@ -423,7 +427,7 @@ footer {
 
     .divEn {
         top: 84%;
-        right: 34%;
+        right: 32%;
     }
 }
 
@@ -449,7 +453,7 @@ footer {
 
     .divEn {
         top: 84%;
-        right: 26%;
+        right: 15%;
     }
 }
 
