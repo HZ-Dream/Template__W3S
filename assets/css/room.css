@@ -94,7 +94,7 @@
 
 .containerSecond__content-item {
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 160px;
 }
 
 .containerSecond__content-item-img {
@@ -181,7 +181,7 @@
     }
 
     .containerSecond__content.row {
-        margin: 20px 12px;
+        margin: 20px 12px 0px;
         padding: 0;
     }
 
@@ -200,6 +200,13 @@
     .containerSecond__content-item-info {
         margin-left: 30px;
         width: auto;
+        height: 212px;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 

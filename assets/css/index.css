@@ -130,6 +130,15 @@
     margin: 17px 0;
     font-size: 14px;
     margin-bottom: 0;
+    padding: 10px 0;
+}
+
+.containerFirst-content__package-item-body-des p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .containerFirst-content__package-item-body-des.normal {
@@ -239,6 +248,11 @@
 
     .containerFirst-content__package-item {
         margin-bottom: 20px;
+    }
+
+    .containerSecond-content__item,
+    .containerSecond-content__item.reverse {
+        padding: 0 35px;
     }
 }
 

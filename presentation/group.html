@@ -35,13 +35,13 @@
                 </a>
             </div>
 
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/about.html">Về The New Gym</a></span>
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/room.html">Hệ thống phòng tập</a></span>
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/support.html">Hỗ trợ tập luyện</a></span>
-            <span class="containerNavbar__navbar-menu-list-item active"><a href="../presentation/group.html">Lớp tập nhóm</a></span>
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/blog.html">Blog</a></span>
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/contact.html">Liên hệ</a></span>
-            <span class="containerNavbar__navbar-menu-list-item vn">
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet"><a href="./about.html">Về The New Gym</a></span>
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet"><a href="./room.html">Hệ thống phòng tập</a></span>
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet"><a href="./support.html">Hỗ trợ tập luyện</a></span>
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet active"><a href="#">Lớp tập nhóm</a></span>
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet"><a href="./blog.html">Blog</a></span>
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet"><a href="./contact.html">Liên hệ</a></span>
+            <span class="containerNavbar__navbar-menu-list-item vn mlr-8px">
                 <a href="#">
                     <span class="lang-icon">
                         <img class="wpml-ls-flag" src="https://thenewgym.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/vi.svg" alt="VN flag" width="24" height="18">
@@ -60,18 +60,38 @@
                 </a>
             </span>
 
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/find.html">
+            <span class="containerNavbar__navbar-menu-list-item mlr-8px hiddenMobile"><a href="../presentation/find.html">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 Tìm kiếm</a>
             </span>
 
-            <span class="containerNavbar__navbar-menu-list-item">
+            <span class="containerNavbar__navbar-menu-list-item mlr-8px hiddenMobile">
                 <a class="containerNavbar__navbar-menu-list-item-btn" href="../presentation/join.html">
                     Tham gia
                 </a>
             </span>
 
+            <div class="containerNavbar__navbar-menu-list-item hiddenLaptop mlr-8px">
+                <div class="btnBar">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
         </div>
+
+        <div class="mobile-menu hiddenLaptop">
+            <ul>
+                <li><a href="./about.html">Về The New Gym</a></li>
+                <li><a href="./room.html">Hệ thống phòng tập</a></li>
+                <li><a href="./support.html">Hỗ trợ tập luyện</a></li>
+                <li><a class="mobile-menu__active" href="#">Lớp tập nhóm</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Liên hệ</a></li>
+                <li class="hiddenTablet"><a href="./find.html">Tìm kiếm</a></li>
+                <li class="hiddenTablet"><a href="./join.html">Tham gia</a></li>
+            </ul>
+        </div>
+
     </div>
 
     <!-- Main -->
@@ -96,7 +116,7 @@
 
             <div class="containerSecond__container">
                 <div class="containerSecond__container-content row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="containerSecond__container-item pt-68">
                             <div class="containerSecond__container-item-title">
                                 YOGA
@@ -137,7 +157,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="containerSecond__container-item">
                             <div class="containerSecond__container-item-title">
                                 CLASS FOR BEGINNERS
@@ -178,7 +198,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="containerSecond__container-item pt-68">
                             <div class="containerSecond__container-item-title">
                                 NEW COMBAT
@@ -219,7 +239,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="containerSecond__container-item">
                             <div class="containerSecond__container-item-title">
                                 NEW PUMP
@@ -260,7 +280,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="containerSecond__container-item pt-68">
                             <div class="containerSecond__container-item-title">
                                 ZUMBA
@@ -301,7 +321,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="containerSecond__container-item">
                             <div class="containerSecond__container-item-title">
                                 TIKTOK DANCE
@@ -393,7 +413,7 @@
     </div>
 
     <script>
-       document.getElementById("backToTop").addEventListener("click", function () {
+        document.getElementById("backToTop").addEventListener("click", function () {
         let scrollStep = -window.scrollY / 50;
         let scrollInterval = setInterval(function () {
                 if (window.scrollY != 0) {
@@ -402,6 +422,13 @@
                     clearInterval(scrollInterval);
                 }
             }, 10);
+        });
+
+        const btnBar = document.querySelector('.btnBar');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        btnBar.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
         });
     </script>
 </body>
