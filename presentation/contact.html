@@ -35,13 +35,13 @@
                 </a>
             </div>
 
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/about.html">Về The New Gym</a></span>
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/room.html">Hệ thống phòng tập</a></span>
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/support.html">Hỗ trợ tập luyện</a></span>
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/group.html">Lớp tập nhóm</a></span>
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/blog.html">Blog</a></span>
-            <span class="containerNavbar__navbar-menu-list-item active"><a href="#">Liên hệ</a></span>
-            <span class="containerNavbar__navbar-menu-list-item vn">
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet"><a href="./about.html">Về The New Gym</a></span>
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet"><a href="./room.html">Hệ thống phòng tập</a></span>
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet"><a href="./support.html">Hỗ trợ tập luyện</a></span>
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet"><a href="./group.html">Lớp tập nhóm</a></span>
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet"><a href="./blog.html">Blog</a></span>
+            <span class="containerNavbar__navbar-menu-list-item hiddenMobileTablet active"><a href="#">Liên hệ</a></span>
+            <span class="containerNavbar__navbar-menu-list-item vn mlr-8px">
                 <a href="#">
                     <span class="lang-icon">
                         <img class="wpml-ls-flag" src="https://thenewgym.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/vi.svg" alt="VN flag" width="24" height="18">
@@ -60,18 +60,38 @@
                 </a>
             </span>
 
-            <span class="containerNavbar__navbar-menu-list-item"><a href="../presentation/find.html">
+            <span class="containerNavbar__navbar-menu-list-item mlr-8px hiddenMobile"><a href="../presentation/find.html">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 Tìm kiếm</a>
             </span>
 
-            <span class="containerNavbar__navbar-menu-list-item">
+            <span class="containerNavbar__navbar-menu-list-item mlr-8px hiddenMobile">
                 <a class="containerNavbar__navbar-menu-list-item-btn" href="../presentation/join.html">
                     Tham gia
                 </a>
             </span>
 
+            <div class="containerNavbar__navbar-menu-list-item hiddenLaptop mlr-8px">
+                <div class="btnBar">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
         </div>
+
+        <div class="mobile-menu hiddenLaptop">
+            <ul>
+                <li><a href="./about.html">Về The New Gym</a></li>
+                <li><a href="./room.html">Hệ thống phòng tập</a></li>
+                <li><a href="./support.html">Hỗ trợ tập luyện</a></li>
+                <li><a href="./group.html">Lớp tập nhóm</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a class="mobile-menu__active" href="#">Liên hệ</a></li>
+                <li class="hiddenTablet"><a href="./find.html">Tìm kiếm</a></li>
+                <li class="hiddenTablet"><a href="./join.html">Tham gia</a></li>
+            </ul>
+        </div>
+
     </div>
 
     <!-- Main -->
@@ -412,6 +432,13 @@
                     }
                 });
             });
+        });
+
+        const btnBar = document.querySelector('.btnBar');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        btnBar.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
         });
     </script>
 </body>

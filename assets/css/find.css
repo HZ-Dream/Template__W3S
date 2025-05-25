@@ -42,3 +42,32 @@
     border: 1px solid #00aeef;
     box-shadow: 0 0 0 2px #b3e5fc;
 }
+
+/* Responsive Main */
+/* Mobile & Tablet */
+@media (max-width: 63.9375em /* < 1023px */) {
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em /* >= 740px */) and (max-width: 63.9375em /* <= 1023px */) {
+
+}
+
+/* Mobile */
+@media (max-width: 46.1875em /* <= 739px */) {
+    .containerNewGym {
+        margin-top: 200px;
+        padding: 0 10px;
+    }
+}
+
+/* PC */
+@media (min-width: 64em /* >= 1024 */) {
+
+}
+
+/* Tablet & PC */
+@media (min-width: 46.25em /* >= 740px */) {
+    
+}
