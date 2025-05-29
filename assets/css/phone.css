@@ -1,0 +1,85 @@
+.containerNewGym {
+    margin: 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phone-input img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.phone-input input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+}
+
+button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #00b4f1;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 10%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 6px;
+    display: none;
+}
+
+/* Responsive Main */
+/* Mobile & Tablet */
+@media (max-width: 63.9375em /* < 1023px */) {
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em /* >= 740px */) and (max-width: 63.9375em /* <= 1023px */) {
+
+}
+
+/* Mobile */
+@media (max-width: 46.1875em /* <= 739px */) {
+    .phoneNext {
+        width: auto;
+    }
+}
+
+/* PC */
+@media (min-width: 64em /* >= 1024 */) {
+
+}
+
+/* Tablet & PC */
+@media (min-width: 46.25em /* >= 740px */) {
+    
+}
+

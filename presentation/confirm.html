@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/icon.jpg" type="image/x-icon">
+    <title>The New Gym</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/second.css">
+    <link rel="stylesheet" href="../assets/css/confirm.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="containerNav">
+        <div class="containerNav-banner">
+            <ul class="containerNav-banner__list">
+                <li class="containerNav-banner__list-item">GYM CHO MỌI NGƯỜI</li>
+            </ul>
+        </div>
+
+        <div class="containerNav__navbar">
+            <div class="containerNav__navbar-logo">
+                <a href="../index.html">
+                    <img src="../assets/images/logo.jpg" alt="Logo" class="containerNav__navbar-logo-img">
+                </a>
+            </div>
+
+            <span class="containerNav__navbar-menu-list-item">
+                <div class="steps-container">
+                    <div class="step pass">1</div>
+                    <div class="line active"></div>
+                    <div class="step pass">2</div>
+                    <div class="line active"></div>
+                    <div class="step active">3</div>
+                    <div class="line active"></div>
+                    <div class="step">4</div>
+                </div>
+            </span>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="form-container">
+        <div class="form-content">
+            <div class="promo-section">
+                <h3 class="section-title">Áp dụng Mã khuyến mãi</h3>
+                <div class="promo-input-container">
+                    <input type="text" class="promo-input" placeholder="Mã khuyến mãi" id="promoCode">
+                    <button class="apply-btn" onclick="applyPromo()">Áp dụng</button>
+                </div>
+                <p class="promo-note">* Chỉ áp dụng 1 mã khuyến mãi cho mỗi đơn hàng</p>
+            </div>
+
+            <div class="payment-section">
+                <h3 class="section-title">Chi tiết thanh toán</h3>
+                
+                <div class="payment-row">
+                    <span class="payment-label">Club</span>
+                    <span class="payment-value">Tất cả chi nhánh</span>
+                </div>
+                
+                <div class="payment-row">
+                    <span class="payment-label">1 tháng</span>
+                    <span class="payment-value">399.000</span>
+                </div>
+                
+                <div class="payment-row">
+                    <span class="payment-label">Phí hội viên</span>
+                    <span class="payment-value">
+                        <span class="free-badge">Miễn phí</span>
+                    </span>
+                </div>
+                
+                <div class="payment-row">
+                    <span class="payment-label">TỔNG</span>
+                    <span class="payment-value total-amount">399.000</span>
+                </div>
+            </div>
+
+            <button class="collapse-btn" onclick="toggleDetails()">
+                <span>Tắt chi tiết</span>
+                <span class="collapse-icon">
+                    <i class="fas fa-chevron-up"></i>
+                </span>
+            </button>
+
+            <p class="terms-text">
+                <a href="./contact.html" class="terms-link">Điều khoản và Điều kiện Sử dụng của The New Gym</a>
+            </p>
+
+            <div class="payment-method-section">
+                <h3 class="section-title">Chọn phương thức thanh toán</h3>
+                
+                <label class="payment-method">
+                    <input type="radio" name="paymentMethod" value="card" checked>
+                    <div class="payment-method-icon">💳</div>
+                    <span class="payment-method-text">Thẻ Tín dụng/Ghi nợ</span>
+                </label>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-secondary" onclick="goBack()">Quay lại</button>
+                <button class="btn btn-primary" onclick="confirmPayment()">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function applyPromo() {
+            const promoCode = document.getElementById('promoCode').value;
+            if (promoCode.trim() === '') {
+                alert('Vui lòng nhập mã khuyến mãi');
+                return;
+            }
+            
+            alert('Đã áp dụng mã khuyến mãi: ' + promoCode);
+        }
+
+        function toggleDetails() {
+            const button = document.querySelector('.collapse-btn');
+            const icon = document.querySelector('.collapse-icon');
+            const paymentSection = document.querySelector('.payment-section');
+            
+            if (paymentSection.style.display === 'none') {
+                paymentSection.style.display = 'block';
+                button.innerHTML = '<span>Tắt chi tiết</span><span class="collapse-icon"><i class="fas fa-chevron-up"></i></span>';
+            } else {
+                paymentSection.style.display = 'none';
+                button.innerHTML = '<span>Hiển thị chi tiết</span><span class="collapse-icon"><i class="fas fa-chevron-down"></i></span>';
+            }
+        }
+
+        function goBack() {
+            if (window.history.length > 1) {
+                window.location = "./phone.html";
+            } else {
+                alert('Quay lại trang trước');
+            }
+        }
+
+        function confirmPayment() {
+            const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked');
+            if (!paymentMethod) {
+                alert('Vui lòng chọn phương thức thanh toán');
+                return;
+            }
+            
+            alert('Đang xử lý thanh toán...');
+            
+            setTimeout(() => {
+                alert('Thanh toán thành công!');
+                window.location = "./order.html";
+            }, 2000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.style.transform = 'scale(1.02)';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

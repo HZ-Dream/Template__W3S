@@ -1,0 +1,147 @@
+/* Nav */
+/* Navbar */
+.containerNav {
+    display: block;
+    height: 125px;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+}
+
+.containerNav-banner__list {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    font-style: italic;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: bold;
+    list-style: none;
+    line-height: 0.5;
+    margin-bottom: 0;
+}
+
+.containerNav-banner__list-item {
+    display: flex;
+    gap: 60px;
+}
+
+.containerNav__navbar {
+    display: flex;
+    width: 100%;
+    padding: 10px 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+}
+
+.containerNav__navbar-logo-img {
+    width: 160px;
+    height: 53px;
+    object-fit: contain;
+}
+
+/* Process */
+.steps-container {
+    display: flex;
+    align-items: center;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.step.pass {
+    border: 1px solid transparent;
+    background-color: #00aaff;
+    color: var(--white-color);
+}
+
+.step.active {
+    border: 1px solid var(--primary-color);
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0 -5px;
+}
+
+.line.active {
+    background-color: var(--primary-color);
+}
+
+
+/* Main */
+.containerNewGym {
+    display: block;
+    margin: 133px 33px 0;
+    padding: 0 24px 24px;
+}
+
+/* Content */
+.containerNewGym__content {
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+/* Responsive Main */
+/* Mobile & Tablet */
+@media (max-width: 63.9375em /* < 1023px */) {
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em /* >= 740px */) and (max-width: 63.9375em /* <= 1023px */) {
+
+}
+
+/* Mobile */
+@media (max-width: 46.1875em /* <= 739px */) {
+    .containerNav__navbar {
+        padding: 10px 20px;
+    }
+
+    .containerNav__navbar-menu-list-item {
+        margin-top: 15px;
+    }
+
+    .containerNewGym {
+        margin: 135px 0 0;
+        padding: 0 15px;
+    }
+
+    .containerNewGym__content {
+        padding-left: 0;
+    }
+
+    .line {
+        width: 20px;
+    }
+}
+
+/* PC */
+@media (min-width: 64em /* >= 1024 */) {
+
+}
+
+/* Tablet & PC */
+@media (min-width: 46.25em /* >= 740px */) {
+    
+}

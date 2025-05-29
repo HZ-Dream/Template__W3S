@@ -1,0 +1,276 @@
+.form-container {
+    max-width: 500px;
+    margin: 150px auto 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.form-content {
+    padding: 30px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Promo Code Section */
+.promo-section {
+    margin-bottom: 30px;
+}
+
+.promo-input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.promo-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+}
+
+.promo-input:focus {
+    outline: none;
+    border-color: #00b4db;
+    background-color: white;
+}
+
+.apply-btn {
+    padding: 12px 20px;
+    background-color: #00b4db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #0083b0;
+}
+
+.promo-note {
+    font-size: 12px;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Payment Details Section */
+.payment-section {
+    margin-bottom: 30px;
+}
+
+.payment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.payment-row:last-child {
+    border-bottom: 2px solid #2c3e50;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.payment-label {
+    color: #5a6c7d;
+    font-size: 14px;
+}
+
+.payment-value {
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.free-badge {
+    background-color: #e8f5e8;
+    color: #27ae60;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.total-amount {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Collapse Details */
+.collapse-btn {
+    width: 100%;
+    padding: 12px 0;
+    background: none;
+    border: none;
+    color: #5a6c7d;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+    outline: none;
+}
+
+.collapse-btn:focus {
+    outline: none;
+}
+
+.collapse-btn:hover {
+    color: #2c3e50;
+}
+
+.collapse-icon {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+/* Terms */
+.terms-text {
+    text-align: center;
+    font-size: 12px;
+    color: #e74c3c;
+    margin: 20px 0;
+    line-height: 1.4;
+}
+
+.terms-link {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Payment Method */
+.payment-method-section {
+    margin-bottom: 30px;
+}
+
+.payment-method {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border: 2px solid #00b4db;
+    border-radius: 8px;
+    background-color: #f0f9ff;
+    margin-bottom: 15px;
+}
+
+.payment-method input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #00b4db;
+}
+
+.payment-method-icon {
+    width: 24px;
+    height: 20px;
+    background-color: #00b4db;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.payment-method-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    flex: 1;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #5a6c7d;
+    border: 2px solid #e1e8ed;
+}
+
+.btn-secondary:hover {
+    background-color: #f8f9fa;
+    border-color: #bdc3c7;
+}
+
+.btn-primary {
+    background-color: #00b4db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0083b0;
+    transform: translateY(-1px);
+}
+
+/* Responsive Main */
+/* Mobile & Tablet */
+@media (max-width: 63.9375em /* < 1023px */) {
+    .form-container {
+        margin: 133px auto;
+        border-radius: 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em /* >= 740px */) and (max-width: 63.9375em /* <= 1023px */) {
+
+}
+
+/* Mobile */
+@media (max-width: 46.1875em /* <= 739px */) {
+    .form-content {
+        padding: 20px;
+    }
+    
+    .promo-input-container {
+        flex-direction: column;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+
+/* PC */
+@media (min-width: 64em /* >= 1024 */) {
+
+}
+
+/* Tablet & PC */
+@media (min-width: 46.25em /* >= 740px */) {
+    
+}

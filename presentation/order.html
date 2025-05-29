@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/icon.jpg" type="image/x-icon">
+    <title>The New Gym</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/second.css">
+    <link rel="stylesheet" href="../assets/css/order.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="containerNav">
+        <div class="containerNav-banner">
+            <ul class="containerNav-banner__list">
+                <li class="containerNav-banner__list-item">GYM CHO MỌI NGƯỜI</li>
+            </ul>
+        </div>
+
+        <div class="containerNav__navbar">
+            <div class="containerNav__navbar-logo">
+                <a href="../index.html">
+                    <img src="../assets/images/logo.jpg" alt="Logo" class="containerNav__navbar-logo-img">
+                </a>
+            </div>
+
+            <span class="containerNav__navbar-menu-list-item">
+                <div class="steps-container">
+                    <div class="step pass">1</div>
+                    <div class="line active"></div>
+                    <div class="step pass">2</div>
+                    <div class="line active"></div>
+                    <div class="step pass">3</div>
+                    <div class="line active"></div>
+                    <div class="step active">4</div>
+                </div>
+            </span>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="success-container">
+        <div class="success-icon">
+            <div class="checkmark"></div>
+        </div>
+
+        <h1 class="success-title">Thanh toán thành công!</h1>
+        <p class="success-message">
+            Cảm ơn bạn đã đăng ký thành viên gym. Thông tin đăng ký đã được gửi đến email của bạn.
+        </p>
+
+        <!-- Home Button -->
+        <button class="home-button" onclick="goHome()">
+            Quay về trang chủ
+        </button>
+    </div>
+
+    <script>
+        function goHome() {
+            window.location = "../index.html";
+        }
+    </script>
+</body>
+</html>
